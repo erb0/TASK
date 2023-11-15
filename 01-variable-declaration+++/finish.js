@@ -9,3 +9,4 @@
  */
 
 const myCountry = "Kazakhstan";
+console.log(myCountry);
