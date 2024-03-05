@@ -4,3 +4,6 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const currDateInMs = new Date().getTime();
+console.log(currDateInMs);

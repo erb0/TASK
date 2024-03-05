@@ -3,7 +3,7 @@
  * Что будет выведено в консоль?
  */
 
-console.log(3 || (true && null) || false) // <-- 3
+console.log(3 || (true && null) || false); // <-- 3
 
 /** ШАГ 1
  * (true && null)

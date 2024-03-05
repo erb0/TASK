@@ -22,4 +22,4 @@ console.log(parseInt(myVariable1) <= parseInt(myVariable2));
 myVariable1 = "20";
 myVariable2 = 100;
 
-console.log(parseInt(myVariable1) <= parseInt(myVariable2));
+console.log(+myVariable1 <= +myVariable2);
