@@ -7,3 +7,8 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+let num1 = 55;
+let num2 = -2;
+let mult = num1 * num2;
+console.log(mult);
