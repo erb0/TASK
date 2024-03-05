@@ -12,3 +12,10 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+const myString = "string";
+
+console.log(myString instanceof String);
+console.log(typeof myString);
+const mySecondString = myString.toUpperCase();
+console.log(mySecondString);

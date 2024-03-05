@@ -12,3 +12,11 @@
  *
  * 4. Вызовите функцию
  */
+/**
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} разница чисел
+ */
+const diff = (a, b) => a - b;
+const res = diff(6, 5);
+console.log(res);

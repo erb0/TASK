@@ -10,3 +10,9 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+const helloFn = function (name) {
+  return `hello ${name}`;
+};
+console.log(helloFn("dog"));
+console.log(helloFn("cat"));
