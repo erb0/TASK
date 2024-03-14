@@ -14,12 +14,14 @@
  */
 
 /**
- * Возвращает разницу двух чисел
+ *
  * @param {number} a
  * @param {number} b
- * @returns {number} Разница чисел
+ * @returns {number}
  */
 
 const diff = (a, b) => a - b;
 let res = diff(5, 6);
 console.log(res);
+
+diff();

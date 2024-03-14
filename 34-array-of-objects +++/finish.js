@@ -11,3 +11,28 @@
  *
  * 4. Выведите результирующий массив в консоль
  */
+
+const cars = [
+  {
+    carBrand: "Audi",
+    price: 10000,
+    isAvailableForSale: true,
+  },
+  {
+    carBrand: "BMW",
+    price: 15000,
+    isAvailableForSale: true,
+  },
+];
+
+const newCar = {
+  carBrand: "Nissan",
+  price: 25000,
+  isAvailableForSale: false,
+};
+
+cars.push(newCar);
+
+cars.forEach((e) => console.log(e.carBrand));
+
+console.log(cars);

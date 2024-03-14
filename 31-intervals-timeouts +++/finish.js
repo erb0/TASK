@@ -12,3 +12,11 @@
  * "Сообщение номер 4"
  * "Сообщение номер 5"
  */
+
+let i = 1;
+
+const messageIntervalId = setInterval(() => {
+  console.log("Сообщение номер " + i);
+  i++;
+}, 2000);
+setTimeout(() => clearInterval(messageIntervalId), 11000);

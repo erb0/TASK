@@ -14,7 +14,30 @@
  *  - для добавления случайного числа в массив с возвратом измененного массива
  */
 
-const MIN = 1000
-const MAX = 9999
+const MIN = 1000;
+const MAX = 9999;
 
-const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351];
+
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const pushNumber = (arr, min, max) => {
+  let newRandomNumber;
+  const updatedArr = [...arr];
+  let i = 0;
+  do {
+    newRandomNumber = randomNumber(min, max);
+    console.log(newRandomNumber);
+    i++;
+  } while (updatedArr.includes(newRandomNumber && i < 4));
+
+  updatedArr.push(newRandomNumber);
+
+  return updatedArr;
+};
+
+const updatedArr = pushNumber(myNumbers, MIN, MAX);
+console.log("upd - " + updatedArr);
+console.log("original - " + myNumbers);
