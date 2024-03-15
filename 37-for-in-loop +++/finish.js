@@ -14,5 +14,8 @@ const myObject = {
 Object.prototype.country = "England";
 
 for (let key in myObject) {
-  console.log(myObject[key]);
+  const data = myObject.hasOwnProperty(key);
+  if (data) {
+    console.log(myObject[key]);
+  }
 }
