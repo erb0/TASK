@@ -20,6 +20,13 @@ function arraySortInfo(inputArray) {
   if (inputArray.some((e) => typeof e !== "number")) {
     return "Некоторые элементы не являются числами";
   }
+  if (inputArray.every((e, i) => (i > 0 ? e >= inputArray[i - 1] : true))) {
+    return "Массив отсортирован по возрастанию";
+  }
+  if (inputArray.every((e, i) => (i > 0 ? e <= inputArray[i - 1] : true))) {
+    return "Массив отсортирован по убыванию";
+  }
+  return "Массив не отсортирован";
 }
 
 console.log(arraySortInfo(a)); // Некоторые элементы не являются числами

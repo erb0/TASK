@@ -16,13 +16,18 @@ const arraySortInfo = (inputArray) => {
     return "Некоторые элементы не являются числами";
   }
 
-  if (
-    inputArray.every((element, index) =>
-      index > 0 ? element >= inputArray[index - 1] : true
-    )
-  ) {
+  // Проверка сортировки массива по возрастанию
+  if (inputArray.slice(1).every((item, index) => item >= inputArray[index])) {
     return "Массив отсортирован по возрастанию";
   }
+
+  // if (
+  //   inputArray.every((element, index) =>
+  //     index > 0 ? element >= inputArray[index - 1] : true
+  //   )
+  // ) {
+  //   return "Массив отсортирован по возрастанию";
+  // }
 
   if (
     inputArray.every((element, index) =>
