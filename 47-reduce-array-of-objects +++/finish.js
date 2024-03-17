@@ -6,6 +6,26 @@
  * у которых количество комментариев не меньше "minimalComentsQty"
  */
 
+// function popularPostsIds(posts, minimalComentsQty) {
+//   const popularIds = posts.reduce((accumulator, currentPost) => {
+//     if (currentPost.comments >= minimalComentsQty) {
+//       accumulator.push(currentPost.postId)
+//     }
+//     return accumulator
+//   }, [])
+
+//   return popularIds
+// }
+
+const popularPostsIds = (posts, minimalCommentsQty) =>
+  posts.reduce(
+    (accumulator, post) =>
+      post.comments >= minimalCommentsQty
+        ? [...accumulator, post.postId]
+        : accumulator,
+    []
+  )
+
 const inputPosts = [
   {
     title: 'Как быстро выучить JavaScript?',
